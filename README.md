@@ -2,7 +2,7 @@
 
 <img src="/imgs/img4.png" alt="img1" width="700"/>
 
-*Разработчики/Developers*
+*Разработчик/Developer*
 
 [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
 
