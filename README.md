@@ -3,7 +3,7 @@
 <img src="/imgs/img4.png" alt="img1" width="700"/>
 
 *Разработчики/Developers*
-1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
+[Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
 
 # Задача
 
