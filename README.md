@@ -4,7 +4,7 @@
 
 *Разработчик/Developer*
 
-[Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
+1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
 
 # Задача
 
