@@ -22,7 +22,7 @@ _Разработать алгоритм считывания и визуали�
 
 [Спецификация/Specification](https://github.com/Andrey-Nedov-is-a-human/3D-Lidar-Data-Processing/tree/main/materials/Velodyne_techinfo.pdf)
 
-<img src="/imgs/lidar.jpg" width="600"/>
+<img src="/imgs/lidar.jpg" width="500"/>
 
 # Результат
 
