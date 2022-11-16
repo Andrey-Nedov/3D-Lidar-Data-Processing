@@ -1,51 +1,51 @@
-# Обработка данных c 3D-лидара, отслеживание объектов и расчёт коридора проходимости робота / Processing 3D lidar data, tracking objects and calculating the passageway of the robot
+# Processing 3D lidar data, tracking objects and calculating the passageway of the robot
 
 <img src="/imgs/img4.png" alt="img1" width="700"/>
 
-*Разработчик/Developer*
+*Developer*
 
-1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human)
+1. [Andrey Nedov](https://github.com/Andrey-Nedov)
 
-# Задача
+# The objective of the project
 
-_Разработать алгоритм считывания и визуализации потоковых данных в виде динамически обновляемого облака точек многолучевого 3D-лидара._
+_Develop an algorithm for reading and visualizing streaming data in the form of a dynamically updated point cloud of a multibeam 3D lidar._
 
-- Подготовить приложение считывания данных с 3D-лидара, сохраненных в файле потоковом формате и вычисления облака точек; 
-- Разработать функцию динамического обновления данных в заданной структуре (объекте) для хранения данных облака точек; 
-- Разработать функцию покадровой визуализации облака точек в изометрической проекции и в режиме «вид сверху» с заданным (настраиваемым) фреймрейтом (частотой); 
-- Разработать функцию фильтрации данных с использованием плоскостей отсечения (куб интереса); 
-- Разработать функцию детектирования объектов методом кластерного анализа;
-- Разработать метод отслеживания «коридора проходимости» для прямолинейного движения робота.
+- Prepare an application for reading data from a 3D lidar saved in a streaming file and calculating a point cloud; 
+- Develop a function to dynamically update data in a given structure (object) for storing point cloud data; 
+- Develop a function for frame-by-frame visualization of a point cloud in isometric projection and in the "top view" mode with a given (adjustable) frame rate (frequency); 
+- Develop a data filtering function using clipping planes (cube of interest);
+- Develop a function for detecting objects by cluster analysis;
+- Develop a method for tracking the "patency corridor" for the rectilinear movement of the robot.
 
-**В работе использовались только стандартные библиотеки C# и графическая библиотека SharpGL (спецификация OpenGL).** 
+**Only the standard C# libraries and the SharpGL graphics library (OpenGL specification) were used in the work.** 
 
-# Лидар
+# Lidar
 
-В работе использовались сырые данные, записанные с 32-лучевого 3D-лидара Velodyne HDL-32E.
+I used raw data recorded from a Velodyne HDL-32E 32-beam 3D lidar.
 
-[Спецификация/Specification](https://github.com/Andrey-Nedov-is-a-human/3D-Lidar-Data-Processing/tree/main/materials/Velodyne_techinfo.pdf)
+[Specification](https://github.com/Andrey-Nedov/3D-Lidar-Data-Processing/tree/main/materials/Velodyne_techinfo.pdf)
 
 <img src="/imgs/lidar.jpg" width="500"/>
 
-# Результат
+# Result
 
-[Видеоотчёт/Video report](https://drive.google.com/file/d/1d_tY8FgbC7GMUCyQpd-twABTlqXyMKZ8/view?usp=sharing)
+[Video report](https://drive.google.com/file/d/1d_tY8FgbC7GMUCyQpd-twABTlqXyMKZ8/view?usp=sharing)
 
-В 3D-пространстве робот предствлен зелёной горизонтальной плоскостью на поверхности куба отсечения. Прозрачный параллелепипед показывает коридор проходимости, доступный для беспрепятственного прямолинейного передвижения робота.
+In 3D space, the robot is represented by a green horizontal plane on the surface of the clipping cube. The transparent parallelepiped shows the passable corridor available for the unobstructed rectilinear movement of the robot.
 
 <img src="/imgs/img1.png" width="700"/>
 
-## Последовательность работы программы:
+## The sequence of the program:
 
-- Чтение из файла пакетов сырых записанных с лидара данных
-- Преобразованеие данных в облако точек
-- Отсечение точек за пределами куба отсечения
-- Фильтрация
-- Кластеризация методом k-means
-- Рассчёт коридора проходимости для робота основываясь на матрице трансляции от общего базиса к базису робота
+- Reading raw data recorded from the lidar from the package file
+- Convert data to pointcloud
+- Clipping points outside the clipping cube
+- Filtration
+- Clustering by k-means method
+- Calculation of the passage corridor for the robot based on the translation matrix from the general basis to the basis of the robot
 
 <br/><img src="/imgs/img2.png" width="700"/>
 
-Вид сверху в изометрии:
+Top view in isometric:
 
 <img src="/imgs/img3.png" width="700"/>
