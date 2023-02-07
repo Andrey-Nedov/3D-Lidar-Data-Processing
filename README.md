@@ -2,6 +2,8 @@
 
 <img src="/imgs/img4.png" alt="img1" width="700"/>
 
+*10.05.2021*
+
 *Developer*
 
 1. [Andrey Nedov](https://github.com/Andrey-Nedov)
