@@ -49,4 +49,4 @@ In 3D space, the robot is represented by a green horizontal plane on the surface
 Top view in isometric:
 
 <img src="/imgs/img3.png" width="700"/>
- 
+  
